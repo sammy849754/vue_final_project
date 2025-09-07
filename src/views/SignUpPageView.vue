@@ -58,7 +58,7 @@ const handleRegister = async () => {
     router.push('/');
   } catch (error) {
     const msg = error.response.data.message;
-    //重複帳號註冊時， API 回傳錯誤時，需提醒用戶
+    //重複帳號註冊時，API   回傳錯誤時，需提醒用戶
     if (msg === '用戶已存在') {
       alert('此帳號已被註冊');
     }
